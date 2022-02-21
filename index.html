@@ -5,8 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://component-library-rk.netlify.app/Styles/Component.css"
+    />
+    <link rel="stylesheet" href="/Stylesheet/index.css" />
   </head>
   <body>
-    <h1>E-Commerce</h1>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <!-- Brand title goes here -->
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="#"> E-commerce </a>
+          </div>
+
+          <ul class="nav-pill nav-menu">
+            <li class="list-inline-item active">
+              <a href="/index.html" class="link-no-style">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/Pages/products.html" class="link-no-style">Shop Now</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search bar -->
+
+        <div class="nav-section">
+          <label class="search-bar">
+            <span class="search-bar-btn" type="submit"
+              ><i class="fa fa-search"> </i
+            ></span>
+            <input
+              class="search-bar-input"
+              type="text"
+              placeholder="Type to search"
+              name="search"
+            />
+          </label>
+
+          <!-- section to show button icons and text below it on nav bar -->
+
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="/Pages/login.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="nav-icon-text"> Profile </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/Pages/wishlist.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="nav-icon-text"> Wishlist </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <button href="/Pages/cart.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="nav-icon-text"> Cart </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="home-banner">
+      <div class="home-banner-img"></div>
+      <div class="home-banner-body">
+        <h1 class="home-banner-title">Clearance Sale</h1>
+        <p class="home-banner-text text-grey-dk text-large">
+          Upto 70% OFF on all the products
+        </p>
+        <a href="/Pages/products.html" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
   </body>
 </html>
