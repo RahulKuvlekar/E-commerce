@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | E-commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://component-library-rk.netlify.app/Styles/Component.css"
+    />
+    <link rel="stylesheet" href="/Stylesheet/index.css" />
+    <link rel="stylesheet" href="/Stylesheet/cart.css" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <!-- Brand title goes here -->
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="#"> E-commerce </a>
+          </div>
+
+          <ul class="nav-pill nav-menu">
+            <li class="list-inline-item">
+              <a href="/index.html" class="link-no-style">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/Pages/products.html" class="link-no-style">Shop Now</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search bar -->
+
+        <div class="nav-section">
+          <label class="search-bar">
+            <span class="search-bar-btn" type="submit"
+              ><i class="fa fa-search"> </i
+            ></span>
+            <input
+              class="search-bar-input"
+              type="text"
+              placeholder="Type to search"
+              name="search"
+            />
+          </label>
+
+          <!-- section to show button icons and text below it on nav bar -->
+
+          <!-- Using the 'badge-container' class on parent and 'badge-icon' &       
+         'badeg-icon-variant' class on child  -->
+
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="/Pages/login.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="nav-icon-text"> Profile </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/Pages/wishlist.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <div class="badge-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge-icon badge-icon-red">5</span>
+                  </div>
+                </span>
+                <span class="nav-icon-text"> Wishlist </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/Pages/cart.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <div class="badge-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge-icon badge-icon-red">7</span>
+                  </div>
+                </span>
+                <span class="nav-icon-text"> Cart </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="cart-title">My Cart</h1>
+    <div class="cart grid">
+      <!-- CART SECTION -->
+      <div class="cart-section">
+        <!-- Address Card -->
+        <div class="address-card card-container">
+          <div class="card-content">
+            <div class="card-body">
+              <h3 class="card-title text-grey-dk text-grey-dk">Address</h3>
+
+              <p class="card-body-text text-grey-md">
+                Pune, Maharashtra ,India
+              </p>
+            </div>
+
+            <button class="btn btn-outline-primary">Change</button>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+
+        <div class="card-container card-horizontal">
+          <img class="card-img" src="https://picsum.photos/500/500" alt="" />
+          <div class="card-badge card-badge-danger">Trending</div>
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <div class="card-content">
+            <h3 class="card-title text-grey-dk">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+
+            <div class="card-price">
+              <span class="price-now text-grey-dk"> Rs. 123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <div class="btn-container">
+              <div class="btn-quantity">
+                <button class="btn btn-outline-primary">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+
+                <span>1</span>
+                <button class="btn btn-outline-primary">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container card-horizontal">
+          <img class="card-img" src="https://picsum.photos/501/501" alt="" />
+
+          <div class="card-badge card-badge-danger">Trending</div>
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+
+          <div class="card-content">
+            <h3 class="card-title text-grey-dk">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+
+            <div class="card-price">
+              <span class="price-now text-grey-dk"> Rs. 123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <div class="btn-container">
+              <div class="btn-quantity">
+                <button class="btn btn-outline-primary">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+
+                <span>4</span>
+                <button class="btn btn-outline-primary">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container card-horizontal">
+          <img class="card-img" src="https://picsum.photos/502/502" alt="" />
+
+          <div class="card-badge card-badge-danger">Trending</div>
+
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+
+          <div class="card-content">
+            <h3 class="card-title text-grey-dk">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+
+            <div class="card-price">
+              <span class="price-now text-grey-dk"> Rs. 123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+
+            <div class="btn-container">
+              <div class="btn-quantity">
+                <button class="btn btn-outline-primary">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+
+                <span>6</span>
+                <button class="btn btn-outline-primary">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRICE SECTION -->
+      <div class="price-section">
+        <h1 class="price-title">Price Details</h1>
+        <br />
+        <hr />
+        <br />
+
+        <!-- list  -->
+        <ul class="list">
+          <li class="price-list text-grey-md">
+            <span>Item Name -1</span>
+            <span>99Rs * 2</span>
+          </li>
+
+          <li class="price-list text-grey-md">
+            <span>Item Name -2</span>
+            <span>199Rs * 3</span>
+          </li>
+
+          <li class="price-list text-grey-md">
+            <span>Item Name -3</span>
+            <span>299Rs * 5</span>
+          </li>
+        </ul>
+
+        <br />
+        <hr />
+        <br />
+
+        <ul class="list">
+          <li class="price-list text-grey-md">
+            <span>Total MRP</span>
+            <span>6699Rs</span>
+          </li>
+
+          <li class="price-list text-grey-md">
+            <span>Discount on MRP</span>
+            <span>-699Rs</span>
+          </li>
+
+          <li class="price-list text-grey-md">
+            <span>Convenience Fee</span>
+            <span>
+              <span class="text-strike">99Rs</span>
+              <span class="text-success">FREE</span>
+            </span>
+          </li>
+
+          <br />
+          <hr />
+          <br />
+          <div class="price-list">
+            <span class="h3 text-grey-dk">Total Amount</span>
+            <span class="h3 text-grey-dk">6299Rs</span>
+          </div>
+        </ul>
+        <br />
+        <hr />
+        <button class="btn btn-primary btn-place-order">Place Order</button>
+      </div>
+    </div>
+  </body>
+</html>
