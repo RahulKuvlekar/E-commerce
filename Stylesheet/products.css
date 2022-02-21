@@ -1,0 +1,67 @@
+/* Style Overides */
+.list .list-title {
+  border-bottom: none;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+button.btn-link {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* Products */
+
+.products {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  grid-template-columns: 250px 1fr;
+  background-color: rgb(250, 250, 250);
+}
+
+/* sidebar */
+.sidebar {
+  background-color: white;
+  padding: 1rem 2rem;
+  overflow-y: scroll;
+  color: var(--grey-color-dark);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.sidebar .list-header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-checkbox input {
+  margin-right: 0.5rem;
+}
+.filter-checkbox {
+  color: var(--grey-color-dark);
+}
+
+/* Hide Scrollbar */
+body::-webkit-scrollbar,
+.main-section::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.main-section,
+.sidebar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* main-section */
+.main-section {
+  padding: 2rem;
+  overflow-y: scroll;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 1rem;
+}

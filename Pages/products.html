@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://component-library-rk.netlify.app/Styles/Component.css"
+    />
+    <link rel="stylesheet" href="/Stylesheet/index.css" />
+    <link rel="stylesheet" href="/Stylesheet/products.css" />
+    <script src="/Scripts/products.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <nav class="nav-bar-container">
+        <div class="nav-section">
+          <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <!-- Brand title goes here -->
+          <div class="nav-logo-title">
+            <a class="link-no-style" href="#"> E-commerce </a>
+          </div>
+
+          <ul class="nav-pill nav-menu">
+            <li class="list-inline-item">
+              <a href="/index.html" class="link-no-style">Home</a>
+            </li>
+            <li class="list-inline-item active">
+              <a href="/Pages/products.html" class="link-no-style">Shop Now</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search bar -->
+
+        <div class="nav-section">
+          <label class="search-bar">
+            <span class="search-bar-btn" type="submit"
+              ><i class="fa fa-search"> </i
+            ></span>
+            <input
+              class="search-bar-input"
+              type="text"
+              placeholder="Type to search"
+              name="search"
+            />
+          </label>
+
+          <!-- section to show button icons and text below it on nav bar -->
+
+          <ul class="nav-pill nav-btn-icons">
+            <li class="list-inline-item">
+              <a href="/Pages/login.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="nav-icon-text"> Profile </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/Pages/wishlist.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="nav-icon-text"> Wishlist </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <button href="/Pages/cart.html" class="nav-icon-btn">
+                <span class="nav-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="nav-icon-text"> Cart </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="products grid">
+      <div class="sidebar">
+        <!-- Using 'list' class name and 'list-collapsable' for creating nested list-->
+        <ul class="list">
+          <div class="list-header">
+            <div class="list-title">Filters</div>
+            <button id="clear-rating" class="h4 btn-link link-primary">
+              Clear
+            </button>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <li class="list-collapsable">
+            <div class="h4">Rating</div>
+            <ul>
+              <!-- Rating Component -->
+              <div class="rating-component">
+                <!-- Display Value -->
+                <div id="display-rating">-- | 5</div>
+                <!-- Select Value -->
+                <input type="radio" name="rate" id="rate-5" value="5" />
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4" value="4" />
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3" value="3" />
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2" value="2" />
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1" value="1" />
+                <label for="rate-1" class="fas fa-star"></label>
+              </div>
+              <!-- Clear Values -->
+            </ul>
+          </li>
+          <br />
+          <hr />
+          <br />
+          <li class="list-collapsable">
+            <div class="h4">Brand</div>
+            <ul>
+              <li class="filter-checkbox">
+                <input
+                  type="checkbox"
+                  name="Nike"
+                  id="brand-nike"
+                  value="Nike"
+                />
+                <label for="brand-nike"> Nike</label>
+              </li>
+              <li class="filter-checkbox">
+                <input
+                  type="checkbox"
+                  name="Adidas"
+                  id="brand-adidas"
+                  value="Nike"
+                />
+                <label for="brand-adidas"> Adidas</label>
+              </li>
+              <li class="filter-checkbox">
+                <input
+                  type="checkbox"
+                  name="Reebok"
+                  id="brand-reebok"
+                  value="Nike"
+                />
+                <label for="brand-reebok"> Reebok</label>
+              </li>
+              <li class="filter-checkbox">
+                <input
+                  type="checkbox"
+                  name="Puma"
+                  id="brand-puma"
+                  value="Nike"
+                />
+                <label for="brand-puma"> Puma</label>
+              </li>
+              <li class="filter-checkbox">
+                <input
+                  type="checkbox"
+                  name="Converse"
+                  id="brand-converse"
+                  value="Nike"
+                />
+                <label for="brand-converse"> Converse</label>
+              </li>
+            </ul>
+          </li>
+          <br />
+          <hr />
+          <br />
+          <li class="list-collapsable">
+            <div class="h4">Price</div>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="price"
+                  id="price-low"
+                  value="price-low"
+                />
+                <label for="price-low"> Low to High</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="price"
+                  id="price-high"
+                  value="price-high"
+                />
+                <label for="price-high"> High to Low</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="main-section grid">
+        <!-- Three type of card-shadow-lt | card-shadow-md | card-shadow-dk -->
+
+        <!-- Using the 'card-shadow-lt' followed by "card container" -->
+        <div class="card-container">
+          <img class="card-img" src="https://picsum.photos/501/501" alt="" />
+          <div class="card-badge card-badge-danger">Trending</div>
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+            <div class="card-price">
+              <span class="price-now"> Rs.123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+        <!-- Three type of card-shadow-lt | card-shadow-md | card-shadow-dk -->
+
+        <!-- Using the 'card-shadow-lt' followed by "card container" -->
+        <div class="card-container">
+          <img class="card-img" src="https://picsum.photos/502/502" alt="" />
+          <div class="card-badge card-badge-danger">Trending</div>
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+            <div class="card-price">
+              <span class="price-now"> Rs.123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+        <!-- Three type of card-shadow-lt | card-shadow-md | card-shadow-dk -->
+
+        <!-- Using the 'card-shadow-lt' followed by "card container" -->
+        <div class="card-container">
+          <img class="card-img" src="https://picsum.photos/503/503" alt="" />
+          <div class="card-badge card-badge-danger">Trending</div>
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+            <div class="card-price">
+              <span class="price-now"> Rs.123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Using the 'card-container'  -->
+        <div class="card-container">
+          <!-- Card Image -->
+          <img class="card-img" src="https://picsum.photos/400/400" alt="" />
+          <!-- Card Dismiss (Optional) -->
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <!-- Card Body -->
+          <div class="card-content">
+            <!-- Card Headings -->
+            <h3 class="card-title">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+            <!-- Card Price Section -->
+            <div class="card-price">
+              <span class="price-now"> Rs. 123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <!-- Card Buttons -->
+            <div class="btn-container">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Using the 'card-container'  -->
+        <div class="card-container">
+          <!-- Card Image -->
+          <img class="card-img" src="https://picsum.photos/450/450" alt="" />
+          <!-- Card Dismiss (Optional) -->
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <!-- Card Body -->
+          <div class="card-content">
+            <!-- Card Headings -->
+            <h3 class="card-title">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+            <!-- Card Price Section -->
+            <div class="card-price">
+              <span class="price-now"> Rs. 123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <!-- Card Buttons -->
+            <div class="btn-container">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Using the 'card-container'  -->
+        <div class="card-container">
+          <!-- Card Image -->
+          <img class="card-img" src="https://picsum.photos/510/510" alt="" />
+          <!-- Card Dismiss (Optional) -->
+          <button class="card-btn-dismiss">
+            <i class="btn-icon fa-solid fa-x"></i>
+          </button>
+          <!-- Card Body -->
+          <div class="card-content">
+            <!-- Card Headings -->
+            <h3 class="card-title">Title</h3>
+            <p class="card-text">Subtitle | Small Description.</p>
+            <!-- Card Price Section -->
+            <div class="card-price">
+              <span class="price-now"> Rs. 123 </span>
+              <span class="price-before"> Rs. 1234 </span>
+              <span class="price-discount"> (12% OFF) </span>
+            </div>
+            <!-- Card Buttons -->
+            <div class="btn-container">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-outline-primary">Add to wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Using the 'card-container'  -->
+        <div class="card-container">
+          <!-- Using the 'card-overlay' as a wrapper class -->
+          <div class="card-overlay">
+            <!-- Using 'card-overlay-content' to display message on overlay -->
+            <div class="card-overlay-content">
+              <h1>Out Of Stock</h1>
+            </div>
+            <img class="card-img" src="https://picsum.photos/509/509" alt="" />
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Using the 'card-container'  -->
+        <div class="card-container">
+          <!-- Using the 'card-overlay' as a wrapper class -->
+          <div class="card-overlay">
+            <!-- Using 'card-overlay-content' to display message on overlay -->
+            <div class="card-overlay-content">
+              <h1>Out Of Stock</h1>
+            </div>
+            <img class="card-img" src="https://picsum.photos/508/508" alt="" />
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Using the 'card-container'  -->
+        <div class="card-container">
+          <!-- Using the 'card-overlay' as a wrapper class -->
+          <div class="card-overlay">
+            <!-- Using 'card-overlay-content' to display message on overlay -->
+            <div class="card-overlay-content">
+              <h1>Out Of Stock</h1>
+            </div>
+            <img class="card-img" src="https://picsum.photos/507/507" alt="" />
+            <button class="card-btn-dismiss">
+              <i class="btn-icon fa-solid fa-x"></i>
+            </button>
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <p class="card-text">Subtitle | Small Description.</p>
+              <div class="card-price">
+                <span class="price-now"> Rs.123 </span>
+                <span class="price-before"> Rs. 1234 </span>
+                <span class="price-discount"> (12% OFF) </span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-outline-primary">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
