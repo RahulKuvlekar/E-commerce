@@ -60,6 +60,9 @@
 
           <!-- section to show button icons and text below it on nav bar -->
 
+          <!-- Using the 'badge-container' class on parent and 'badge-icon' &       
+         'badeg-icon-variant' class on child  -->
+
           <ul class="nav-pill nav-btn-icons">
             <li class="list-inline-item">
               <a href="/Pages/login.html" class="nav-icon-btn">
@@ -72,18 +75,24 @@
             <li class="list-inline-item">
               <a href="/Pages/wishlist.html" class="nav-icon-btn">
                 <span class="nav-icon">
-                  <i class="fas fa-heart"></i>
+                  <div class="badge-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge-icon badge-icon-red">5</span>
+                  </div>
                 </span>
                 <span class="nav-icon-text"> Wishlist </span>
               </a>
             </li>
             <li class="list-inline-item">
-              <button href="/Pages/cart.html" class="nav-icon-btn">
+              <a href="/Pages/cart.html" class="nav-icon-btn">
                 <span class="nav-icon">
-                  <i class="fas fa-shopping-cart"></i>
+                  <div class="badge-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge-icon badge-icon-red">7</span>
+                  </div>
                 </span>
                 <span class="nav-icon-text"> Cart </span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>

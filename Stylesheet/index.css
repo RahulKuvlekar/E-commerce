@@ -35,6 +35,10 @@ body {
 .nav-pill.nav-menu li.active a {
   color: var(--primary-hover);
 }
+.badge-icon {
+  width: 20px;
+  height: 20px;
+}
 
 .home-banner {
   position: relative;
