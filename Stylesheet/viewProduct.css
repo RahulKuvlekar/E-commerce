@@ -1,0 +1,73 @@
+.viewProduct-description::-webkit-scrollbar {
+  display: none;
+}
+.viewProduct-description {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.viewProduct-section {
+  width: 100%;
+  max-width: 1440px;
+  background-color: white;
+  margin: auto;
+}
+.viewProduct-container {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  width: 90%;
+  max-width: 1440px;
+  height: 80vh;
+  max-height: 1040px;
+  margin: 5vh auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.viewProduct-img {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 1rem;
+  height: 100%;
+}
+.viewProduct-img img {
+  max-height: 75vh;
+}
+.viewProduct-description {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  text-align: left;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+.viewProduct-section .btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+}
+.viewProduct-section .btn-container .btn {
+  flex-grow: 1;
+  margin: 1rem 0;
+}
+.viewProduct-section .price-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.viewProduct-section .price-section .price-before {
+  text-decoration: line-through;
+  color: var(--grey-color-medium);
+}
+.viewProduct-section .price-section .price-discount {
+  color: var(--danger-color);
+}
