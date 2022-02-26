@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="/Stylesheet/index.css" />
     <link rel="stylesheet" href="/Stylesheet/cart.css" />
+    <script src="/Scripts/cart.js" defer></script>
   </head>
   <body>
     <header class="nav-bar">
@@ -116,6 +117,81 @@
     </header>
 
     <h1 class="page-title">My Cart</h1>
+
+    <!-- Background Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Change Address Modal -->
+    <div class="modal" id="modalChangeAddress">
+      <!-- Modal Title -->
+      <div class="modal-header">
+        <div class="modal-title">Change Delivery Address</div>
+        <button class="btn-close close-btn">&times;</button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <div class="checkbox-group">
+          <input type="radio" name="address" id="address-1" checked />
+          <label for="address-1">Pune, Maharashtra,India</label>
+          <span class="text-grey-lt">( Default )</span>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="address" id="address-2" />
+          <label for="address-2">Banglore, Karnataka,India</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="address" id="address-3" />
+          <label for="address-3">Mumbai, Maharashtra,India</label>
+        </div>
+      </div>
+      <!-- Modal Buttons -->
+      <div class="modal-btns">
+        <button class="btn btn-outline-primary open-AddNewAddress-btn">
+          Add New Address
+        </button>
+        <button class="btn btn-primary close-btn">Cancel</button>
+        <button class="btn btn-primary">Confirm</button>
+      </div>
+    </div>
+    <!-- Add New Address Modal -->
+    <div class="modal" id="modalAddNewAddress">
+      <!-- Modal Title -->
+      <div class="modal-header">
+        <div class="modal-title">Add New Address</div>
+        <button class="btn-close close-btn">&times;</button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Using 'input-group' as outside container, containing label, input  -->
+        <form action="" >
+        <div class="input-group">
+          <label class="input-label"  >Name *</label>
+          <input type="text" placeholder="Enter Fullname" required/>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Mobile No *</label>
+          <input type="number" placeholder="Enter Mobile Number" required />
+        </div>
+        <div class="input-group">
+          <label class="input-label">Address *</label>
+          <input type="number" placeholder="Enter pincode *" required />
+          <input
+            type="text"
+            placeholder="Address(House no, Street , Area) *"
+            required
+          />
+          <input type="text" placeholder="State *" required />
+          <input type="text" placeholder="Country *" required />
+        </div>
+      </div>
+      <!-- Modal Buttons -->
+      <div class="modal-btns">
+        <button class="btn btn-primary close-btn">Cancel</button>
+        <button type="submit" class="btn btn-primary addNewAddress-btn">Add new Address</button>
+      </div>
+    </form>
+    </div>
     <div class="cart grid">
       <!-- CART SECTION -->
       <div class="cart-section">
@@ -130,7 +206,9 @@
               </p>
             </div>
 
-            <button class="btn btn-outline-primary">Change</button>
+            <button class="btn btn-outline-primary open-ChangeAddress-btn">
+              Change
+            </button>
           </div>
         </div>
 
