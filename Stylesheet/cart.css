@@ -98,3 +98,19 @@ a.btn {
 .btn-place-order {
   width: 100%;
 }
+
+/* Modals Elements */
+.checkbox-group {
+  margin: 1rem 0;
+}
+.checkbox-group input {
+  margin: 0 0.2rem 0;
+}
+
+.modal-btns button.open-AddNewAddress-btn {
+  color: var(--primary-color);
+  flex-grow: 1;
+}
+.modal-btns button.open-AddNewAddress-btn:hover {
+  color: white;
+}
