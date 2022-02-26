@@ -10,6 +10,8 @@
 
 - [Product Listing](https://ecommerce-rk.netlify.app/pages/products)
 
+- [View Product](https://ecommerce-rk.netlify.app/pages/viewproduct)
+
 - [Wishlist](https://ecommerce-rk.netlify.app/pages/wishlist)
 
 - [Cart](https://ecommerce-rk.netlify.app/pages/cart)
@@ -19,6 +21,8 @@
 - [SignUp](https://ecommerce-rk.netlify.app/pages/signup)
   
 - [Logout-Button](https://ecommerce-rk.netlify.app/index.html)
+
+- [Forgot-password](https://ecommerce-rk.netlify.app/pages/forgotpassword)
 <br><br>
 
 
