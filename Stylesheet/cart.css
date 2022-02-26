@@ -43,13 +43,19 @@ a.btn {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.page-title {
+  width: 100%;
+  max-width: 1040px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
 
 /* cart */
 
 .cart {
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1040px;
   height: 80vh;
   margin: auto;
   grid-template-columns: 1fr 350px;
@@ -61,7 +67,7 @@ a.btn {
   padding: 2rem;
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 1rem;
   overflow-y: scroll;
   background-color: white;

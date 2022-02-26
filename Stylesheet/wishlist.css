@@ -1,10 +1,26 @@
+/* Hide Scrollbar */
+.wishlist::-webkit-scrollbar {
+  display: none;
+}
+.wishlist {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.page-title {
+  width: 100%;
+  max-width: 1040px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
 .wishlist {
   padding: 2rem;
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  justify-content: center;
+  max-width: 1040px;
   height: 80vh;
   margin: auto;
+  overflow-y: scroll;
   grid-template-columns: repeat(auto-fit, 300px);
   gap: 1rem;
   background-color: #ffffff;
