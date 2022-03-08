@@ -301,6 +301,10 @@ body,
   }
 }
 @media all and (max-width: 425px) {
+  .nav-bar-container {
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
   .search-bar {
     position: relative;
     margin: 0 0 0 0;

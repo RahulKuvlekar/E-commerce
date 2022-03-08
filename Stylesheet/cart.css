@@ -120,3 +120,30 @@ a.btn {
 .modal-btns button.open-AddNewAddress-btn:hover {
   color: white;
 }
+
+/* Responsiveness */
+@media all and (max-width: 875px) {
+  .cart {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    grid-auto-flow: dense;
+  }
+  .cart > .price-section {
+    grid-row: 1;
+  }
+  .cart > .cart-section {
+    grid-row: 2;
+  }
+}
+
+@media all and (max-width: 525px) {
+  .price-section .price-title {
+    font-size: 1.6rem;
+  }
+  .card-container.card-horizontal {
+    flex-flow: column nowrap;
+  }
+  .card-container.card-horizontal .card-img {
+    width: 100%;
+  }
+}
