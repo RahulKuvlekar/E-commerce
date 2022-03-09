@@ -10,6 +10,11 @@ button.btn-link {
   border: none;
   cursor: pointer;
 }
+
+.product-heading {
+  display: none;
+}
+
 /* Products */
 
 .products {
@@ -84,4 +89,36 @@ body::-webkit-scrollbar,
 .main-section.active,
 .preloader.active {
   display: inherit;
+}
+
+@media all and (max-width: 670px) {
+  .products {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vh max-content;
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar.active {
+    display: unset;
+  }
+
+  .deactive {
+    display: none;
+  }
+
+  .product-heading {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--grey-color-dark);
+    position: sticky;
+    top: 10vh;
+    z-index: 99;
+    border-bottom: 1px solid var(--grey-color-light);
+  }
 }
